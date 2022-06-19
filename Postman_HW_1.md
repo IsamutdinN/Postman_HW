@@ -23,7 +23,7 @@
 
 ## pm.test('Status code 200', function() {
 ##     pm.response.to.have.status(200);
-###});
+### });
 
 ### // 3. Спарсить response body в json.
 ## let respJson = pm.response.json();
