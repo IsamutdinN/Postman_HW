@@ -12,7 +12,7 @@
 
 
 ### pm.test('body = string', function() {
-######     pm.expect(respText).to.include('This is the first responce from server!');
+###     pm.expect(respText).to.include('This is the first responce from server!');
 ### });
 
 -----------------
