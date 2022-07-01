@@ -18,7 +18,6 @@
 
 ## // 2. Статус код 200
 
-<<<<<<< HEAD
 ### pm.test('Status code 200', function() {
 ###     pm.response.to.have.status(200);
 =======
@@ -68,7 +67,6 @@
 
 ## pm.test('Test = salary(req)', function() {
 ##     pm.expect(respJson.salary).to.eql(parseInt(reqJson.salary));
->>>>>>> 20f7689c67fff6cbe6e3d78a6861019e32666771
 ### });
 
 
