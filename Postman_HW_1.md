@@ -18,8 +18,57 @@
 
 ## // 2. Статус код 200
 
+<<<<<<< HEAD
 ### pm.test('Status code 200', function() {
 ###     pm.response.to.have.status(200);
+=======
+### // 1. Отправить запрос.
+## // 2. Статус код 20
+
+## pm.test('Status code 200', function() {
+##     pm.response.to.have.status(200);
+### });
+
+### // 3. Спарсить response body в json.
+## let respJson = pm.response.json();
+
+### // 4. Проверить, что name в ответе равно name s request (name вбить руками.)
+## pm.test('Name в ответе равно name s request', function() {
+##     pm.expect(respJson.name).to.eql('isma');
+## });
+
+### // 5. Проверить, что age в ответе равно age s request (age вбить руками.)
+## pm.test('Age в ответе равно age s request', function() {
+##     pm.expect(respJson.age).to.eql('30');
+## });
+
+### // 6. Проверить, что salary в ответе равно salary s request (salary вбить руками.)
+## pm.test('Salary в ответе равно salary s request', function() {
+##     pm.expect(respJson.salary).to.eql(1000);
+## });
+
+### // 7. Спарсить request.
+## let reqJson = request.data;
+
+### // 8. Проверить, что name в ответе равно name s request (name забрать из request.)
+## pm.test('Test = name(req)', function() {
+##     pm.expect(respJson.name).to.eql(reqJson.name);
+## });
+
+### // 9. Проверить, что age в ответе равно age s request (age забрать из request.)
+## pm.test('Test = age(req)', function() {
+##     pm.expect(respJson.age).to.eql(reqJson.age);
+## });
+
+### // 10. Проверить, что salary в ответе равно salary s request (salary забрать из request.)
+
+## pm.test('salary = salary request1', function(){
+##     pm.expect(respJson.salary).to.eql(+reqJson.salary);
+## });
+
+## pm.test('Test = salary(req)', function() {
+##     pm.expect(respJson.salary).to.eql(parseInt(reqJson.salary));
+>>>>>>> 20f7689c67fff6cbe6e3d78a6861019e32666771
 ### });
 
 
