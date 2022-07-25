@@ -273,19 +273,19 @@ pm.test('Status code 200', function() {
  pm.environment.set('name', respJson.name);
 ```
 ---
-### // 17. Создать в окружении переменную salary
-### // 18. Передать в окружение переменную salary
+###  17. Создать в окружении переменную salary
+###  18. Передать в окружение переменную salary
 ```js
  pm.environment.set('salary', respJson.salary[0]);
 ```
 ---
-### // 19. Передать в окружение переменную age
-### // 20. Передать в окружение переменную age
+###  19. Передать в окружение переменную age
+###  20. Передать в окружение переменную age
 ```js
  pm.environment.set('age', respJson.age);
 ```
 ---
-### // 21. Написать цикл который выведет в консоль по порядку элементы списка из параметра salary.
+###  21. Написать цикл который выведет в консоль по порядку элементы списка из параметра salary.
 ```js
  let respSalary = respJson.salary;
  let Salary = [respSalary[0], respSalary[1], respSalary[2]];
